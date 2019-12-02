@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { RoomViewComponent } from './room-view/room-view.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { RoomListComponent } from './room-list/room-list.component';
 
 const appRoutes: Routes = [
   {path: '', component: DashboardComponent},
@@ -21,7 +22,7 @@ const appRoutes: Routes = [
       appRoutes,
       { enableTracing: true } //for debugging
     ) ],
-  declarations: [ AppComponent, TopBarComponent, RoomViewComponent, DashboardComponent ],
+  declarations: [ AppComponent, TopBarComponent, RoomViewComponent, DashboardComponent, RoomListComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
