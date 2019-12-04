@@ -8,9 +8,11 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { RoomViewComponent } from './room-view/room-view.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RoomListComponent } from './room-list/room-list.component';
+import { AddRoomComponent } from './add-room/add-room.component';
 
 const appRoutes: Routes = [
   {path: '', component: DashboardComponent},
+  {path: 'upload', component: AddRoomComponent},
   {path: '**', component: DashboardComponent} //wildcard path, always last
 ]
 
@@ -22,7 +24,7 @@ const appRoutes: Routes = [
       appRoutes,
       { enableTracing: true } //for debugging
     ) ],
-  declarations: [ AppComponent, TopBarComponent, RoomViewComponent, DashboardComponent, RoomListComponent ],
+  declarations: [ AppComponent, TopBarComponent, RoomViewComponent, DashboardComponent, RoomListComponent, AddRoomComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
