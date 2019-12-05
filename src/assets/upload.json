@@ -1,0 +1,14 @@
+[
+  {
+    "name" : "Dummy",
+    "url" : "https://github.com/maxb0707/angular-mygallery/blob/master/src/assets/MyGallery_Start.png?raw=true"
+  },
+  {
+    "name" : "Living Room - Piano",
+    "url" : "https://github.com/maxb0707/angular-mygallery/blob/master/src/assets/living-room.JPG?raw=true"
+  },
+  {
+    "name" : "Living Room - Table",
+    "url" : "https://github.com/maxb0707/angular-mygallery/blob/master/src/assets/living-room-2.JPG?raw=true"
+  }
+]
