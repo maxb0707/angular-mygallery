@@ -1,1 +1,12 @@
-<button>Upload a new room</button>
+<button>Upload a foto of a new room</button>
+
+<form [formGroup]="uploadForm">
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+
+  <button class="button" type="submit" (ngSubmit)="onSubmit(uploadForm.value)">Add room</button>
+</form>

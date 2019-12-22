@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-add-room',
@@ -6,8 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-room.component.css']
 })
 export class AddRoomComponent implements OnInit {
+  uploadForm;
 
-  constructor() { }
+  constructor(
+    private formBuilder: FormBuilder
+  ) { 
+    this.uploadForm = this.formBuilder.group({
+      name: ''
+    });
+  }
+
+  onSubmit(roomData){
+    console.warn('ok');
+  }
 
   ngOnInit() {
   }
